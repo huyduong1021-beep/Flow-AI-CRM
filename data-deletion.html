@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hướng dẫn xóa dữ liệu — Flow</title>
+<style>
+  :root{--bg:#F7FAF8;--surface:#fff;--surface-2:#F0F5F2;--ink:#14201C;--ink-2:#47564F;--ink-3:#7A877F;--line:#E2E9E5;--accent:#1E6F5C;--accent-tint:rgba(30,111,92,.10);--r:14px;}
+  @media (prefers-color-scheme:dark){:root{--bg:#0E1310;--surface:#151B17;--surface-2:#1B221E;--ink:#EAF1ED;--ink-2:#A6B3AD;--ink-3:#6F7C76;--line:#26302B;--accent:#3FA98D;--accent-tint:rgba(63,169,141,.15);}}
+  :root[data-theme=light]{--bg:#F7FAF8;--surface:#fff;--surface-2:#F0F5F2;--ink:#14201C;--ink-2:#47564F;--ink-3:#7A877F;--line:#E2E9E5;--accent:#1E6F5C;}
+  :root[data-theme=dark]{--bg:#0E1310;--surface:#151B17;--surface-2:#1B221E;--ink:#EAF1ED;--ink-2:#A6B3AD;--ink-3:#6F7C76;--line:#26302B;--accent:#3FA98D;}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:760px;margin:0 auto;padding:40px 20px 80px}
+  header{border-bottom:1px solid var(--line);padding-bottom:22px;margin-bottom:26px}
+  .brand{display:flex;align-items:center;gap:10px;margin-bottom:16px}
+  .logo{width:34px;height:34px;border-radius:9px;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:17px}
+  .brand b{font-size:16px}
+  h1{font-size:clamp(24px,5vw,30px);margin:6px 0 8px;letter-spacing:-.02em}
+  .eff{color:var(--ink-3);font-size:13px}
+  .toggle{display:inline-flex;gap:2px;background:var(--surface-2);border:1px solid var(--line);border-radius:999px;padding:3px;margin-top:16px}
+  .toggle button{border:0;background:transparent;color:var(--ink-2);font:inherit;font-size:13px;font-weight:600;padding:5px 15px;border-radius:999px;cursor:pointer}
+  .toggle button.on{background:var(--accent);color:#fff}
+  h2{font-size:17px;margin:28px 0 8px;letter-spacing:-.01em}
+  p,li{color:var(--ink-2);font-size:14.5px}
+  ol,ul{padding-left:20px}li{margin:6px 0}
+  a{color:var(--accent);font-weight:600}
+  .box{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px 20px;margin-top:18px}
+  .box h2{margin-top:0}
+  code{font-family:ui-monospace,Menlo,monospace;font-size:.88em;background:var(--surface-2);padding:1px 6px;border-radius:5px;border:1px solid var(--line);color:var(--ink)}
+  footer{margin-top:40px;padding-top:20px;border-top:1px solid var(--line);color:var(--ink-3);font-size:12.5px;display:flex;gap:16px;flex-wrap:wrap}
+  .lang-en{display:none}
+  :root[data-lang=en] .lang-vi{display:none}
+  :root[data-lang=en] .lang-en{display:block}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand"><span class="logo">F</span><b>Flow</b></div>
+    <h1 class="lang-vi">Hướng dẫn xóa dữ liệu</h1>
+    <h1 class="lang-en">Data Deletion Instructions</h1>
+    <div class="eff"><span class="lang-vi">Cập nhật lần cuối: 18/07/2026</span><span class="lang-en">Last updated: July 18, 2026</span></div>
+    <div class="toggle"><button data-l="vi" class="on">Tiếng Việt</button><button data-l="en">English</button></div>
+  </header>
+
+  <div class="lang-vi">
+    <p>Flow tôn trọng quyền kiểm soát dữ liệu của bạn. Bạn có thể xóa dữ liệu của mình bất cứ lúc nào theo một trong hai cách sau.</p>
+
+    <h2>Cách 1 — Tự ngắt kết nối trong ứng dụng</h2>
+    <ol>
+      <li>Mở Flow và đăng nhập.</li>
+      <li>Vào phần <b>Trang đã kết nối</b> (hoặc “Kết nối Threads”).</li>
+      <li>Bấm <b>Ngắt kết nối</b> tài khoản bạn muốn gỡ.</li>
+    </ol>
+    <p>Khi ngắt kết nối, Flow lập tức ngừng truy cập và <b>xóa mã truy cập</b> tương ứng khỏi hệ thống/trình duyệt của bạn.</p>
+
+    <h2>Cách 2 — Yêu cầu xóa toàn bộ qua email</h2>
+    <ol>
+      <li>Gửi email tới <a href="mailto:info@tobeserenity.com?subject=Yêu%20cầu%20xóa%20dữ%20liệu%20Flow">info@tobeserenity.com</a> với tiêu đề <b>“Yêu cầu xóa dữ liệu”</b>.</li>
+      <li>Ghi rõ tên tài khoản/trang bạn muốn xóa dữ liệu.</li>
+      <li>Chúng tôi sẽ xóa toàn bộ dữ liệu liên quan trong vòng <b>30 ngày</b> và xác nhận lại cho bạn.</li>
+    </ol>
+
+    <h2>Chúng tôi xóa những gì</h2>
+    <ul>
+      <li>Mã truy cập của các tài khoản bạn đã kết nối.</li>
+      <li>Thông tin trang/hồ sơ đã lưu (tên, ID, ảnh đại diện).</li>
+      <li>Bản nháp, lịch đăng và nội dung bạn lưu trong Flow.</li>
+    </ul>
+    <p>Lưu ý: các bài <b>đã đăng</b> nằm trên Facebook/Instagram/Threads — bạn tự xóa trên chính nền tảng đó nếu muốn.</p>
+
+    <div class="box">
+      <h2>Liên hệ</h2>
+      <p>Email: <a href="mailto:info@tobeserenity.com">info@tobeserenity.com</a></p>
+    </div>
+  </div>
+
+  <div class="lang-en">
+    <p>Flow respects your control over your data. You can delete your data at any time in one of two ways.</p>
+
+    <h2>Option 1 — Disconnect inside the app</h2>
+    <ol>
+      <li>Open Flow and sign in.</li>
+      <li>Go to <b>Connected Pages</b> (or “Connect Threads”).</li>
+      <li>Click <b>Disconnect</b> on the account you want to remove.</li>
+    </ol>
+    <p>On disconnect, Flow immediately stops accessing and <b>deletes the corresponding access token</b> from our system/your browser.</p>
+
+    <h2>Option 2 — Request full deletion by email</h2>
+    <ol>
+      <li>Email <a href="mailto:info@tobeserenity.com?subject=Flow%20Data%20Deletion%20Request">info@tobeserenity.com</a> with the subject <b>“Data Deletion Request”</b>.</li>
+      <li>Specify the account/page whose data you want deleted.</li>
+      <li>We will delete all related data within <b>30 days</b> and confirm to you.</li>
+    </ol>
+
+    <h2>What we delete</h2>
+    <ul>
+      <li>Access tokens for the accounts you connected.</li>
+      <li>Stored page/profile info (name, ID, avatar).</li>
+      <li>Drafts, schedules and content you saved in Flow.</li>
+    </ul>
+    <p>Note: content <b>already published</b> lives on Facebook/Instagram/Threads — delete it on those platforms directly if you wish.</p>
+
+    <div class="box">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:info@tobeserenity.com">info@tobeserenity.com</a></p>
+    </div>
+  </div>
+
+  <footer>
+    <a href="./index.html">Flow</a>
+    <a href="./privacy.html"><span class="lang-vi">Quyền riêng tư</span><span class="lang-en">Privacy</span></a>
+    <a href="./terms.html"><span class="lang-vi">Điều khoản</span><span class="lang-en">Terms</span></a>
+  </footer>
+</div>
+<script>
+  const root=document.documentElement;
+  document.querySelectorAll('.toggle button').forEach(b=>b.onclick=()=>{
+    root.setAttribute('data-lang',b.dataset.l);
+    document.querySelectorAll('.toggle button').forEach(x=>x.classList.toggle('on',x===b));
+  });
+</script>
+</body>
+</html>
